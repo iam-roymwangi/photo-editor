@@ -1,6 +1,8 @@
 import { Text, View } from "react-native";
+import { useTheme } from "@/context/ThemeContext";
 
 export default function Index() {
+  const { currentTheme } = useTheme();
   return (
     <View
       style={{
